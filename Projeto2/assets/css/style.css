@@ -1,0 +1,237 @@
+/* Removendo os estilos padrão do HTML */
+* {
+  box-sizing: border-box; /* Define a caixa de modelagem para border-box */
+  margin: 0; /* Remove as margens */
+  padding: 0; /* Remove o preenchimento */
+  font-family: "Montserrat", sans-serif; /* Define a fonte padrão */
+}
+
+body {
+  color: #263238; /* Define a cor do texto do corpo */
+}
+
+/* Cabeçalho */
+header {
+  background-color: #e91e63; /* Define a cor de fundo do cabeçalho */
+  display: flex; /* Usa flexbox para o layout */
+  justify-content: space-between; /* Alinha os itens ao cabeçalho */
+  padding: 24px 15%; /* Adiciona preenchimento ao cabeçalho */
+  /* padding-bottom: 24px; */
+  /* padding-left: 80px; */
+  /* padding-right: 80px; */
+  align-items: center; /* Alinha os itens verticalmente */
+}
+
+header a {
+  color: #fff; /* Define a cor do link no cabeçalho */
+  font-weight: 600; /* Define o peso da fonte */
+  text-decoration: none; /* Remove a decoração do link */
+  padding: 0 32px; /* Adiciona preenchimento ao redor do link */
+}
+
+header nav a:hover {
+  text-decoration: underline; /* Sublinha os links no hover */
+}
+/* Fim do Cabeçalho */
+
+/* ------------Seção Início --------------- */
+#inicio {
+  display: flex; /* Usa flexbox para o layout */
+  padding: 24px 80px 200px 80px; /* Adiciona preenchimento à seção Início */
+  gap: 64px; /* Define o espaçamento entre os itens */
+  align-items: center; /* Alinha os itens verticalmente */
+  position: relative; /* Define a posição como relativa */
+  justify-content: center; /* Alinha os itens horizontalmente */
+}
+
+h1,
+h2 {
+  font-size: 32px; /* Define o tamanho da fonte */
+  font-weight: 600; /* Define o peso da fonte */
+  margin-bottom: 32px; /* Adiciona margem inferior */
+  max-width: 600px; /* Define a largura máxima */
+}
+
+.paragrafo {
+  font-size: 18px; /* Define o tamanho da fonte */
+  font-weight: 400; /* Define o peso da fonte */
+  line-height: 150%; /* Define a altura da linha */
+  margin-bottom: 32px; /* Adiciona margem inferior */
+  text-align: justify; /* Justifica o texto */
+  max-width: 600px; /* Define a largura máxima */
+}
+
+.botao {
+  background-color: #e91e63; /* Define a cor de fundo do botão */
+  padding: 16px 32px; /* Adiciona preenchimento ao botão */
+  color: #fff; /* Define a cor do texto do botão */
+  text-decoration: none; /* Remove a decoração do link */
+  border-radius: 8px; /* Define o raio da borda */
+  font-weight: 500; /* Define o peso da fonte */
+  font-size: 16px; /* Define o tamanho da fonte */
+}
+
+.botao-transparent {
+  background-color: transparent; /* Define a cor de fundo transparente */
+  color: #e91e63; /* Define a cor do texto */
+  padding: 16px 32px; /* Adiciona preenchimento ao botão */
+  font-weight: 600; /* Define o peso da fonte */
+  font-size: 16px; /* Define o tamanho da fonte */
+  text-underline-offset: 4px; /* Define o deslocamento da sublinhado */
+}
+
+.absolute {
+  position: absolute; /* Define a posição absoluta */
+  bottom: 0; /* Define a distância do fundo */
+  left: 0; /* Define a distância da esquerda */
+  width: 100%; /* Define a largura */
+  z-index: -10; /* Define a ordem de empilhamento */
+}
+/* ---- Fím da Seção Início ------- */
+
+/* Início da Seção Clinica */
+#clinica {
+  display: flex; /* Usa flexbox para o layout */
+  align-items: center; /* Alinha os itens verticalmente */
+  padding: 64px 80px; /* Adiciona preenchimento à seção Clínica */
+  gap: 64px; /* Define o espaçamento entre os itens */
+  justify-content: center; /* Alinha os itens horizontalmente */
+}
+
+#clinica li {
+  margin-left: 32px; /* Adiciona margem à esquerda */
+  margin-bottom: 16px; /* Adiciona margem inferior */
+  font-size: 18px; /* Define o tamanho da fonte */
+}
+/* ------Fím da Seção Clínica----- */
+
+/* Início Seção Farmácia */
+#farmacia {
+  padding: 64px 80px; /* Adiciona preenchimento à seção Farmácia */
+  text-align: center; /* Alinha o texto ao centro */
+  justify-content: center; /* Alinha os itens horizontalmente */
+}
+
+#farmacia img {
+  margin: 64px auto; /* Adiciona margem superior e inferior e alinha ao centro */
+}
+
+#farmacia h2 {
+  margin: 0 auto; /* Adiciona margem superior e inferior e alinha ao centro */
+  max-width: 500px; /* Define a largura máxima */
+}
+
+#farmacia .paragrafo {
+  max-width: 950px; /* Define a largura máxima */
+  margin: 0 auto; /* Alinha ao centro */
+}
+/* ------Fím da Seção Farmácia ------------- */
+
+/* ---- Início da Seção Dúvidas Frequentes -- */
+#duvidas {
+  display: flex; /* Usa flexbox para o layout */
+  align-items: start; /* Alinha os itens verticalmente no topo */
+  gap: 64px; /* Define o espaçamento entre os itens */
+  padding: 64px 80px; /* Adiciona preenchimento à seção Dúvidas Frequentes */
+  justify-content: center; /* Alinha os itens horizontalmente */
+}
+
+#duvidas .paragrafo {
+  max-width: 700px; /* Define a largura máxima */
+}
+
+.duvida {
+  position: relative; /* Define a posição relativa */
+}
+
+.duvida h3 {
+  border: 2px solid #e91e63; /* Adiciona uma borda sólida */
+  padding: 24px; /* Adiciona preenchimento */
+  border-radius: 8px; /* Define o raio da borda */
+  cursor: pointer; /* Altera o cursor para ponteiro */
+}
+
+.duvida img {
+  position: absolute; /* Define a posição absoluta */
+  top: 32px; /* Define a distância do topo */
+  right: 15px; /* Define a distância da direita */
+}
+
+.duvida p {
+  border-right: 1px solid #e91e63; /* Adiciona uma borda direita */
+  border-bottom: 1px solid #e91e63; /* Adiciona uma borda inferior */
+  border-left: 1px solid #e91e63; /* Adiciona uma borda esquerda */
+  border-radius: 0 0 8px 8px; /* Define o raio da borda */
+  padding: 24px; /* Adiciona preenchimento */
+  margin-top: -8px; /* Move o elemento para cima */
+  padding: 0 24px; /* Adiciona preenchimento */
+  height: 0; /* Define a altura como 0 */
+  overflow: hidden; /* Esconde o conteúdo que ultrapassa */
+  opacity: 0; /* Define a opacidade como 0 */
+}
+
+.duvida.ativa p {
+  height: fit-content; /* Define a altura como o conteúdo */
+  opacity: 1; /* Define a opacidade como 1 */
+  padding: 24px; /* Adiciona preenchimento */
+}
+/* --- Fím da Seção Dúvidas Frequentes -- */
+
+/* Seção de Rodapé */
+footer {
+  display: flex; /* Usa flexbox para o layout */
+  justify-content: space-between; /* Alinha os itens com espaçamento igual */
+  padding: 64px 80px; /* Adiciona preenchimento ao rodapé */
+  gap: 80px; /* Define o espaçamento entre os itens */
+  background-color: rgba(
+    233,
+    30,
+    99,
+    0.25
+  ); /* Define a cor de fundo com transparência */
+}
+
+footer img,
+footer .titulo {
+  display: block; /* Exibe os elementos como bloco */
+  font-weight: 600; /* Define o peso da fonte */
+  margin-bottom: 24px; /* Adiciona margem inferior */
+}
+
+footer p {
+  max-width: 350px; /* Define a largura máxima */
+  margin-bottom: 16px; /* Adiciona margem inferior */
+}
+
+footer nav a {
+  color: #263238; /* Define a cor do texto do link */
+  display: block; /* Exibe os elementos como bloco */
+  margin-bottom: 16px; /* Adiciona margem inferior */
+  text-decoration: none; /* Remove a decoração do link */
+}
+
+footer nav a:hover {
+  font-weight: 600; /* Define o peso da fonte no hover */
+}
+
+footer p a {
+  color: #263238; /* Define a cor do texto do link */
+  text-decoration: none; /* Remove a decoração do link */
+}
+
+footer p a:hover {
+  font-weight: 600; /* Define o peso da fonte no hover */
+}
+/* Fim da seção rodapé */
+
+/* Seção desenvolvedor */
+#dev {
+  background-color: #263238; /* Define a cor de fundo */
+  color: #fff; /* Define a cor do texto */
+  padding: 24px; /* Adiciona preenchimento */
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+#dev a {
+  color: #fb7d44; /* Define a cor do link */
+}
